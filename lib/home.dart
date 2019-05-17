@@ -61,6 +61,7 @@ class _MyHomePageState extends State<HomeScreen> {
     queryData = MediaQuery.of(context);
 
     double deviceHeight = queryData.size.height;
+    double viganFoodCardImageSize =(deviceHeight * (24 / 100.0));
 
     return new Scaffold(
         bottomNavigationBar: _bottomNavigationBar(),
@@ -118,16 +119,16 @@ class _MyHomePageState extends State<HomeScreen> {
                   top: 0.0,
                   left: 20.0,
                 ),
-                height: (deviceHeight * (24 / 100.0)),
+                height: (deviceHeight * (20 / 100.0)),
                 child: ListView(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    _happyVeganCard("vegan3.jpeg", "Breakfast", 4),
+                    _happyVeganCard("vegan3.jpeg", "Breakfast", 4, viganFoodCardImageSize),
                     SizedBox(width: 10.0),
-                    _happyVeganCard("vegan5.jpeg", "Lunch with vegitables", 3),
+                    _happyVeganCard("vegan5.jpeg", "Lunch with vegitables", 3, viganFoodCardImageSize),
                     SizedBox(width: 10.0),
-                    _happyVeganCard("vegan4.jpeg", "Spanish Rice and Beans", 2),
+                    _happyVeganCard("vegan4.jpeg", "Spanish Rice and Beans", 2, viganFoodCardImageSize),
                     SizedBox(width: 10.0),
                   ],
                 ),
@@ -207,7 +208,7 @@ class _MyHomePageState extends State<HomeScreen> {
         ));
   }
 
-  Widget _happyVeganCard(String imageName, String title, double rating) {
+  Widget _happyVeganCard(String imageName, String title, double rating, double veganFoodCardImageSize) {
     void moveToFoodDetailsScreen() {
       Navigator.push(
         context,
@@ -231,7 +232,7 @@ class _MyHomePageState extends State<HomeScreen> {
                     Padding(
                       padding: EdgeInsets.only(top: 0.0),
                       child: Container(
-                          height: 120.0,
+                          height: (veganFoodCardImageSize * (50 / 100.0)),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.only(
                                   topRight: Radius.circular(5.0),
