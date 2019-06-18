@@ -15,3 +15,16 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 # hello_food
+
+- [Check same example in flutter for web](https://github.com/shainsingh89/hello_food_web)
+
+# Android Sample
+<img src="sample_image/android_1.jpg" height="400em" /> <img
+src="sample_image/android_2.jpg" height="400em" /> <img
+src="sample_image/android_3.jpg" height="400em" />
+
+
+# iOS sample
+<img src="sample_image/ios_1.png" height="400em" /> <img
+src="sample_image/ios_2.png" height="400em" /> <img
+src="sample_image/ios_3.png" height="400em" />
